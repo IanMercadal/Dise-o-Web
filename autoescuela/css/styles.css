@@ -41,7 +41,7 @@ h3 {
 
 /* Globales */
 .container {
-    margin: 1rem 10rem;
+    margin: 2rem 10rem;
 }
 .dos-columnas {
     display: grid;
@@ -52,6 +52,7 @@ h3 {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    padding: 1rem;
 }
 .columna, .fila {
     display: flex;
@@ -69,6 +70,19 @@ h3 {
 }
 .sombra {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-weight: bolder;
+    border: 2px solid var(--azul);
+}
+.btn:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
+    transition: ease-in 0.2s;
 }
 
 /* Header */
