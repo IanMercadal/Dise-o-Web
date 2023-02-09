@@ -26,6 +26,7 @@ a {
 h1,h2,h3 {
     text-align: center;
     color: var(--azul);
+    text-transform: capitalize;
 }
 
 h1 {
@@ -107,9 +108,10 @@ h3 {
 .nav-link {
     color: var(--negro);
     padding: 1rem;
+    padding: 1rem;
 }
 .nav-link:hover {
-    background-color: rgb(101, 161, 213);
+    background-color: var(--azul-suave);
     color: var(--blanco);
     transition: ease-in 0.2s;
 }
@@ -131,6 +133,7 @@ legend {
 .inputBox {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
 }
 textarea {
     resize: none;
@@ -138,4 +141,43 @@ textarea {
     height: 20rem;
     border: 1px solid var(--azul);
     font-family: var(--fuentePrincipal);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--azul-suave);
+    color: var(--blanco);
+
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-titulo {
+    color: var(--blanco);
+}
+.footer-nav, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.nav-link-footer {
+    color: var(--blanco);
+    text-align: left;
+    padding: 0.4rem;
+}
+.nav-link-footer:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
+    text-align: left;
+}
+.copyright .container{
+    border-top: 2px solid var(--blanco);
+    text-align: center;
 }
