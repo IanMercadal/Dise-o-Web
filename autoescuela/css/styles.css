@@ -2,10 +2,10 @@
     --blanco: #FFF;
     --negro: #111111;
     --gris: #343A40;
+    --azul: #0E629E;
 
     --fuentePrincipal: 'Raleway', sans-serif;
 }
-
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -13,18 +13,65 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 0;
 }
-
 a {
     text-decoration: none;
 }
+h1,h2,h3 {
+    text-align: center;
+    color: var(--azul);
+}
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+/* Globales */
+.container {
+    margin: 1rem 10rem;
+}
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.columna, .fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.img-columna {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.sombra {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Header */
 .header {
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
@@ -52,3 +99,4 @@ a {
     color: var(--blanco);
     transition: ease-in 0.2s;
 }
+
