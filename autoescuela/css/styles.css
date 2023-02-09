@@ -2,6 +2,7 @@
     --blanco: #FFF;
     --negro: #111111;
     --gris: #343A40;
+    --azul-suave: #47789b;
     --azul: #0E629E;
 
     --fuentePrincipal: 'Raleway', sans-serif;
@@ -84,7 +85,6 @@ h3 {
     color: var(--azul);
     transition: ease-in 0.2s;
 }
-
 /* Header */
 .header {
     background-image: url(../img/banner.jpg);
@@ -114,3 +114,28 @@ h3 {
     transition: ease-in 0.2s;
 }
 
+/* Form */
+.form {
+    color: var(--azul);
+}
+legend {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.input {
+    border: none;
+    border-bottom: 1px solid var(--azul-suave);
+    color: var(--azul);
+    height: 30px;
+}
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 20rem;
+    border: 1px solid var(--azul);
+    font-family: var(--fuentePrincipal);
+}
