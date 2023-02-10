@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -114,6 +115,20 @@ h3 {
     background-color: var(--azul-suave);
     color: var(--blanco);
     transition: ease-in 0.2s;
+}
+
+/* Galeria */
+.galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+.imagen-galeria {
+    width: 250px;
+    padding: 1rem;
 }
 
 /* Form */

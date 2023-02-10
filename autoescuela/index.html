@@ -14,18 +14,18 @@
     <link rel="shortcut icon" href="./img/icon.png" type="image/png">
 </head>
 <body>
-    <header class="header">
+    <header id="inicio" class="header">
         <div class="navigation">
-            <a href="#" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Autoescuela</a>
-            <a href="#" class="nav-link">Flota</a>
-            <a href="#" class="nav-link">Contacto</a>
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#autoescuela" class="nav-link">Autoescuela</a>
+            <a href="#flota" class="nav-link">Flota</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
         </div>
     </header>
 
     <body>
         <!-- Autoescuela -->
-        <div class="container">
+        <div id="autoescuela" class="container">
             <div class="fila">
                 <h1>Autoescuela</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores omnis eum officiis alias voluptate sapiente deserunt. Praesentium eligendi iusto, illum distinctio ex architecto? Neque porro, quas ea sapiente praesentium ex.
@@ -71,7 +71,7 @@
 
         </div>
         <!-- Flota -->
-        <div class="container">
+        <div id="flota" class="container">
             <div class="dos-columnas">
                 <div class="columna">
                     <h2>Flota</h2>
@@ -83,9 +83,17 @@
                     <img class="img-columna" src="./img/flota.jpg">
                 </div>
             </div>
+            <div class="galeria">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+                <img class="imagen-galeria" src="./img/flota.jpg">
+            </div>
         </div>
         <!-- Contacto -->
-        <div class="container">
+        <div id="contacto" class="container">
             <fieldset class="form">
                 <legend>Formulario</legend>
                 <form action="get">
@@ -121,7 +129,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="columnas">
-                <div class="columna"></div>
+                <div class="columna">
+                    <h3 class="footer-titulo">Autoescuela</h3>
+                    <img src="./img/logo.png">
+                </div>
                 <div class="columna">
                     <div class="footer-contact">
                         <h3 class="footer-titulo">Contácto</h3>
@@ -154,10 +165,10 @@
                 <div class="columna">
                     <div class="footer-nav">
                         <h3 class="footer-titulo">Navegación</h3>
-                        <a class="nav-link-footer" href="#">Inicio</a>
-                        <a class="nav-link-footer" href="#">Autoescuela</a>
-                        <a class="nav-link-footer" href="#">Flota</a>
-                        <a class="nav-link-footer" href="#">Contacto</a>
+                        <a class="nav-link-footer" href="#inicio">Inicio</a>
+                        <a class="nav-link-footer" href="#autoescuela">Autoescuela</a>
+                        <a class="nav-link-footer" href="#flota">Flota</a>
+                        <a class="nav-link-footer" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
