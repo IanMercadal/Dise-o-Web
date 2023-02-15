@@ -118,8 +118,25 @@ img {
     padding: 1rem; 
     width: 100%;
 }
+.galeria-casas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 4rem;
+    justify-content: center;
+}
+.casa-galeria {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    width: 280px;
+}
 section {
     margin: 1rem 4rem;
+}
+.justify-start {
+    justify-items: start
 }
 
 /* HEADER */
@@ -147,7 +164,7 @@ section {
 .fondo-oscuro {
     background-color: var(--gris-oscuro);
     color: var(--blanco);
-    margin: 2rem 0rem;
+    margin: 4rem 0rem;
 }
 .linea-oscura {
     display: grid;
@@ -162,6 +179,9 @@ section {
     width: 98%;
     height: 250px;
     object-fit: cover;
+}
+.linea-texto {
+    border-bottom: 1px solid white;
 }
 .linea-texto > * {
     color: var(--blanco);
@@ -192,6 +212,27 @@ section {
     background-repeat: no-repeat;
 }
 
+/* RESIDENCIA */
+.casa {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    height: 600px;
+    padding: 1rem;
+}
+.casa-imagen {
+    max-width: none;
+    padding: 2rem;
+    width: 80%;
+}
+.casa-info {
+    width: 100%;
+}
+.casa-datos {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FOOTER */
 .footer {
     border-top: 1px solid var(--negro);
@@ -205,6 +246,16 @@ section {
 }
 
 /* MEDIA */
+@media (max-width: 1440px) {
+    .casa {
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+        height: auto;
+    }
+    .casa-imagen {
+        max-width: 400px;
+    }
+}
 @media (max-width: 1024px) {
     .flex-columnas {
         flex-direction: column;
